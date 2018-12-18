@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Storage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Entry x:Name="StoreConv1" Keyboard="Numeric" Placeholder="Units in Kilobyte" TextColor="Red" />
+            <Button Text="Convert to Megabyte" Clicked="StorageClick1" TextColor="Blue"/>
+            <Label x:Name="KiloMega" Text="Megabytes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="StoreConv2" Keyboard="Numeric" Placeholder="Units in Megabyte" TextColor="Red" />
+            <Button Text="Convert to Gigabytes"  TextColor="Blue" Clicked="StorageClick2" />
+            <Label x:Name="MegaGiga" Text="Gigabytes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="StoreConv3" Keyboard="Numeric" Placeholder="Units in Gigabytes" TextColor="Red" />
+            <Button Text="Convert to Terabytes" Clicked="StorageClick3" TextColor="Blue"/>
+            <Label x:Name="GigaTera" Text="Terabytes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="StoreConv4" Keyboard="Numeric" Placeholder="Length in Terabytes" TextColor="Red" />
+            <Button Text="Convert to Inches" Clicked="StorageClick4" TextColor="Blue"/>
+            <Label x:Name="TeraPeta" Text="Petabytes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="StoreConv5" Keyboard="Numeric" Placeholder="Units in Petabytes" TextColor="Red" />
+            <Button Text="Convert to Zettabytes" Clicked="StorageClick5" TextColor="Blue"/>
+            <Label x:Name="PetaZetta" Text="Zettabytes is: " HorizontalOptions = "Center" TextColor="Red"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

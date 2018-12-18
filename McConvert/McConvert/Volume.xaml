@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Volume">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Default">
+
+            <!-- Button and label settings for layout of the calculations -->
+
+            <Entry x:Name="Volume1" Keyboard="Numeric" Placeholder="Volume in Millilitres" TextColor="Red" />
+            <Button Text="Convert to litres" Clicked="VolumeConv1" TextColor="Blue"/>
+            <Label x:Name="Millit" Text="Millilitres to litres is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Volume2" Keyboard="Numeric" Placeholder="Volume in Litres" TextColor="Red" />
+            <Button Text="Convert to Millilitres" Clicked="VolumeConv2" TextColor="Blue"/>
+            <Label x:Name="LitMil" Text="Litres to Millilitres is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Volume3" Keyboard="Numeric" Placeholder="Volume in Litres" TextColor="Red" />
+            <Button Text="Convert to Gallons" Clicked="VolumeConv3" TextColor="Blue"/>
+            <Label x:Name="LitGal" Text="Litres to Gallons is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            
+            <Entry x:Name="Volume4" Keyboard="Numeric" Placeholder="Volume in Gallons" TextColor="Red" />
+            <Button Text="Convert to Cubic Metres" Clicked="VolumeConv4" TextColor="Blue"/>
+            <Label x:Name="GalCub" Text="Gallons to Cubic Metres is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            
+            <Entry x:Name="Volume5" Keyboard="Numeric" Placeholder="Volume in Cubic Metres" TextColor="Red" />
+            <Button Text="Convert to Cubic Yards" Clicked="VolumeConv5" TextColor="Blue"/>
+            <Label x:Name="CubCub" Text="Cubic Metres to Cubic Yards is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
