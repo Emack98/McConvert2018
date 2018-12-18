@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:McConvert"
+             x:Class="McConvert.MainPage">
+
+
+        <Grid BackgroundColor="Black">
+        <Button Image="Temperature.png" Grid.Row="0" Grid.Column="0" Text="Temperature" BackgroundColor="Gray" Clicked="Convert_Temperature"/>
+        
+        <Button Image="Currency.png" Grid.Row="0" Grid.Column="1" 
+                Text="Currency" BackgroundColor="Gray" Clicked="CurrencyConvert"/> 
+        
+        <Button Image="Length.png" Grid.Row="1" Grid.Column="0" 
+                Text="Length" BackgroundColor="Gray" Clicked="LengthConvert"/>
+        
+        <Button Image="Speed.png" Grid.Row="1" Grid.Column="1" 
+                Text="Speed/Distance" BackgroundColor="Gray" Clicked="SpeedConvert"/>
+        
+        <Button Image="Storage.png" Grid.Row="2" Grid.Column="0"
+                Text="Storage" BackgroundColor="Gray" Clicked="StorageConvert"/>
+        
+        <Button Image="Volume.png" Grid.Row="2" Grid.Column="1"
+                Text="Volume" BackgroundColor="Gray" Clicked="VolumeConvert"/>
+        
+        <Button Image="Weight.png" Grid.Row="3" Grid.Column="0" 
+                Text="Weight" BackgroundColor="Gray" Clicked="WeightConvert"/>
+
+        <Button Image="Time.png" Grid.Row="3" Grid.Column="1" 
+                Text="Time" BackgroundColor="Gray" Clicked="TimeConvert"/>
+
+
+    </Grid>
+    
+
+</ContentPage>

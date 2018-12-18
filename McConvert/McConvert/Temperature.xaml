@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Temperature">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+
+            <Entry x:Name="Celcius" Keyboard="Numeric" Placeholder="Temperature in Celcius" TextColor="Red" />
+            <Entry x:Name="Fahrenheit" Keyboard="Numeric" Placeholder="Temperature in Fahrenheit" TextColor="Red" />
+
+            <Button Text="Calculate" Clicked="Button_Clicked" TextColor="Blue"/>
+
+            <Label x:Name="FahrOut" Text="The temperature is: " HorizontalOptions = "Center" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
