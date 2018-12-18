@@ -41,12 +41,12 @@ namespace McConvert
 
             async void WeightConvert(object sender, EventArgs args)
             {
-                await Navigation.PushAsync(new Temperature());
+                await Navigation.PushAsync(new Weight());
             }
 
             async void TimeConvert(object sender, EventArgs args)
             {
-                await Navigation.PushAsync(new Temperature());
+                await Navigation.PushAsync(new Time());
             }
 
             async void LengthConvert(object sender, EventArgs args)

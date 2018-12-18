@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Weight">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Default">
+
+            <!-- Button and label settings for layout of the calculations -->
+
+            <Entry x:Name="Weight1" Keyboard="Numeric" Placeholder="Weight in Ounces" TextColor="Red" />
+            <Button Text="Convert to Pounds" Clicked="WeightConv1" TextColor="Blue"/>
+            <Label x:Name="OuncePound" Text="Ounces to Pounds is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Weight2" Keyboard="Numeric" Placeholder="Weight in Pounds" TextColor="Red" />
+            <Button Text="Convert to Stone" Clicked="WeightConv2" TextColor="Blue"/>
+            <Label x:Name="PoundStone" Text="Pounds to Stone is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Weight3" Keyboard="Numeric" Placeholder="Weight in Stone" TextColor="Red" />
+            <Button Text="Convert to Pounds" Clicked="WeightConv3" TextColor="Blue"/>
+            <Label x:Name="StonePounds" Text="Stone to Pounds: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Weight4" Keyboard="Numeric" Placeholder="Weight in Kilograms" TextColor="Red" />
+            <Button Text="Convert to Tonnes" Clicked="WeightConv4" TextColor="Blue"/>
+            <Label x:Name="KGTon" Text="Kilograms to Tonnes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Weight5" Keyboard="Numeric" Placeholder="Weight in Tonnes" TextColor="Red" />
+            <Button Text="Convert to Kilograms" Clicked="WeightConv5" TextColor="Blue"/>
+            <Label x:Name="TonKG" Text="Tonnes to Kilograms is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

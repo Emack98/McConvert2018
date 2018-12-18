@@ -14,7 +14,7 @@ namespace McConvert
 	{
 		public Volume ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 
         private void VolumeConv1(object sender, EventArgs e)
@@ -23,7 +23,7 @@ namespace McConvert
 
             double Litre = Convert.ToDouble(Volume1.Text);
 
-            Litre = (Mil * 1000);
+            Litre = (Mil / 1000);
 
             var outLitre = Litre.ToString();
 
@@ -36,7 +36,7 @@ namespace McConvert
 
             double Litre = Convert.ToDouble(Volume2.Text);
 
-            Mil = (Litre / 1000);
+            Mil = (Litre * 1000);
 
             var outMil = Mil.ToString();
 

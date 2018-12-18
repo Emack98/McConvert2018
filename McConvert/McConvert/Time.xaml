@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Time">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Default">
+
+                <!-- Button and label settings for layout of the calculations -->
+
+                <Entry x:Name="Time1" Keyboard="Numeric" Placeholder="Time in Seconds" TextColor="Red" />
+                <Button Text="Convert to Minutes" Clicked="TimeConv1" TextColor="Blue"/>
+                <Label x:Name="SecMin" Text="Seconds to Minutes is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+                <Entry x:Name="Time2" Keyboard="Numeric" Placeholder="Time in Minutes" TextColor="Red" />
+                <Button Text="Convert to Hours" Clicked="TimeConv2" TextColor="Blue"/>
+                <Label x:Name="MinHour" Text="Minutes to hours is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+                <Entry x:Name="Time3" Keyboard="Numeric" Placeholder="Time in Hours" TextColor="Red" />
+                <Button Text="Convert to Days" Clicked="TimeConv3" TextColor="Blue"/>
+                <Label x:Name="HourDay" Text="Hours to days is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+                <Entry x:Name="Time4" Keyboard="Numeric" Placeholder="Time in Days" TextColor="Red" />
+                <Button Text="Convert to Weeks" Clicked="TimeConv4" TextColor="Blue"/>
+                <Label x:Name="DayWeek" Text="Days to Weeks is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+                <Entry x:Name="Time5" Keyboard="Numeric" Placeholder="Time in Weeks" TextColor="Red" />
+                <Button Text="Convert to Months" Clicked="TimeConv5" TextColor="Blue"/>
+                <Label x:Name="WeekMonth" Text="Weeks to Months is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+                <Entry x:Name="Time6" Keyboard="Numeric" Placeholder="Time in Months" TextColor="Red" />
+                <Button Text="Convert to Years" Clicked="TimeCon6" TextColor="Blue"/>
+                <Label x:Name="MonthYear" Text="Months to Years is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
