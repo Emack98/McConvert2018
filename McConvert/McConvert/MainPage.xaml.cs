@@ -21,12 +21,12 @@ namespace McConvert
 
             async void CurrencyConvert(object sender, EventArgs args)
             {
-                await Navigation.PushAsync(new Temperature());
+                await Navigation.PushAsync(new Currency());
             }
 
             async void SpeedConvert(object sender, EventArgs args)
             {
-                await Navigation.PushAsync(new Temperature());
+                await Navigation.PushAsync(new Speed());
             }
 
             async void StorageConvert(object sender, EventArgs args)
@@ -51,7 +51,7 @@ namespace McConvert
 
             async void LengthConvert(object sender, EventArgs args)
             {
-                await Navigation.PushAsync(new Temperature());
+                await Navigation.PushAsync(new Length());
             }
         
 

@@ -29,7 +29,6 @@
         <Button Image="Time.png" Grid.Row="3" Grid.Column="1" 
                 Text="Time" BackgroundColor="Gray" Clicked="TimeConvert"/>
 
-
     </Grid>
     
 

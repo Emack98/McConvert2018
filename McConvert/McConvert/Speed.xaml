@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Speed">
+    <ContentPage.Content>
+          <StackLayout BackgroundColor="Default">
+
+                <!-- Button and label settings for layout of the calculations -->
+
+                <Entry x:Name="Speed1" Keyboard="Numeric" Placeholder="Speed/Distance in KM/H" TextColor="Red" />
+
+                <Button Text="Convert to MP/H" Clicked="SpeedConv1" TextColor="Blue"/>
+
+                <Label x:Name="MPHout" Text="Kilometers to Miles is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+                <Entry x:Name="Speed2" Keyboard="Numeric" Placeholder="Speed/Distance in MP/H" TextColor="Red" />
+
+                <Button Text="Convert to KM/H" Clicked="SpeedConv2" TextColor="Blue"/>
+
+                <Label x:Name="KMHout" Text="Miles to Kilometers is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

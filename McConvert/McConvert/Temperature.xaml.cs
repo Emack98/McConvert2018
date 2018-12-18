@@ -16,14 +16,28 @@ namespace McConvert
 			InitializeComponent ();
 		}
 
+        //button clicks for calculations on temperature change 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            double C = Convert.ToDouble(Celcius.Text);
-            double F = Convert.ToDouble(Fahrenheit.Text);
+            double Celcius = Convert.ToDouble(Temp.Text);
 
-            F = (C * 9/5) + 32;
+            double Fahrenheit = Convert.ToDouble(Temp.Text);
 
-            FahrOut.Text = "The temperature is: " + F;
+            Fahrenheit = (Celcius * 9 / 5) + 32;
+
+            FahrOut.Text = "Fahrenheit = " + Fahrenheit;
         }
+
+        private void ButtonClicked(object sender, EventArgs e)
+        {
+            double Celcius = Convert.ToDouble(Temp2.Text);
+            double Fahrenheit = Convert.ToDouble(Temp2.Text);
+
+            Celcius = (Fahrenheit - 32) * 5 / 9;
+
+            CelcOut.Text = "Celcius = " + Celcius;
+        }
+
+       
     }
 }

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Currency">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Default">
+
+            <!-- Layout of the page and buttons for calculations -->
+            <Entry x:Name="Currency1" Keyboard="Numeric" Placeholder="Currency in Euro" TextColor="Red" />
+            <Button Text="Convert to Pounds" Clicked="ButtonClicked" TextColor="Blue"/>
+            
+            <!--  Labels for indication on which conversion it is -->
+            <Label x:Name="EuroPound" Text="Euro to Pounds is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="Currency2" Keyboard="Numeric" Placeholder="Currency in Pounds" TextColor="Red" />
+            <Button Text="Convert to Euro"  TextColor="Blue" Clicked="ButtonClicked2" />
+            <Label x:Name="PoundEuro" Text="Pounds to Euro is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Currency3" Keyboard="Numeric" Placeholder="Currency in Euro" TextColor="Red" />
+            <Button Text="Convert to US Dollar" Clicked="ButtonClicked3" TextColor="Blue"/>
+            <Label x:Name="EuroDollar" Text="Euro to US Dollar is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Currency4" Keyboard="Numeric" Placeholder="Currency in US Dollar" TextColor="Red" />
+            <Button Text="Convert to Euro" Clicked="ButtonClicked4" TextColor="Blue"/>
+            <Label x:Name="DollarEuro" Text="US Dollar to Euro is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

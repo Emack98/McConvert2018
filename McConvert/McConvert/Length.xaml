@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="McConvert.Length">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Default">
+
+            <Entry x:Name="LengthConv1" Keyboard="Numeric" Placeholder="Length in Feet" TextColor="Red" />
+            <Button Text="Convert to Meters" Clicked="LengthClick1" TextColor="Blue"/>
+            <Label x:Name="FtMeters" Text="Length in Meters is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="LengthConv2" Keyboard="Numeric" Placeholder="Length in Meters" TextColor="Red" />
+            <Button Text="Convert to Feet"  TextColor="Blue" Clicked="LengthClick2" />
+            <Label x:Name="MetresFt" Text="Length in Feet is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="LengthConv3" Keyboard="Numeric" Placeholder="Length in Inches" TextColor="Red" />
+            <Button Text="Convert to CM" Clicked="LengthClick3" TextColor="Blue"/>
+            <Label x:Name="InchCM" Text="Length in Centimetres is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+            <Entry x:Name="LengthConv4" Keyboard="Numeric" Placeholder="Length in Centimeters" TextColor="Red" />
+            <Button Text="Convert to Inches" Clicked="LengthClick4" TextColor="Blue"/>
+            <Label x:Name="CMInch" Text="Length in Inches is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

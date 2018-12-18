@@ -3,14 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="McConvert.Temperature">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
+        <StackLayout BackgroundColor="Default">
+            
+            <!-- Button and label settings for layout of the calculations -->
 
-            <Entry x:Name="Celcius" Keyboard="Numeric" Placeholder="Temperature in Celcius" TextColor="Red" />
-            <Entry x:Name="Fahrenheit" Keyboard="Numeric" Placeholder="Temperature in Fahrenheit" TextColor="Red" />
+            <Entry x:Name="Temp" Keyboard="Numeric" Placeholder="Temperature in Celcius" TextColor="Red" />
 
-            <Button Text="Calculate" Clicked="Button_Clicked" TextColor="Blue"/>
+            <Button Text="Convert to Fahrenheit" Clicked="Button_Clicked" TextColor="Blue"/>
 
-            <Label x:Name="FahrOut" Text="The temperature is: " HorizontalOptions = "Center" TextColor="Red"/>
+            <Label x:Name="FahrOut" Text="Fahrenheit to Celius is: " HorizontalOptions = "Center" TextColor="Red"/>
+
+
+            <Entry x:Name="Temp2" Keyboard="Numeric" Placeholder="Temperature in Fahrenheit" TextColor="Red" />
+
+            <Button Text="Convert to Celcius" Clicked="ButtonClicked" TextColor="Blue"/>
+
+            <Label x:Name="CelcOut" Text="Celcius to Fahrenheit is: " HorizontalOptions = "Center" TextColor="Red"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
