@@ -17,6 +17,8 @@ namespace McConvert
 			InitializeComponent ();
 		}
 
+        //Button layouts for calculations and conversions in code behind
+
         private void WeightConv1(object sender, EventArgs e)
         {
             double Ounces = Convert.ToDouble(Weight1.Text);

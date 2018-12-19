@@ -4,16 +4,17 @@
              x:Class="McConvert.Page1">
     
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
+        <StackLayout BackgroundColor="Gray">
 
             <Label x:Name="label"
-               Text="Welcome to McConvert!"
+               Text="Welcome to McConvert!"        
                FontSize="Large"
-               TextColor="Red"
+               TextColor="Black"
                VerticalOptions="CenterAndExpand"
-               HorizontalOptions="Center"/>
+               HorizontalOptions="CenterAndExpand"/>
 
             <Button Text="Let's get started! =>"
+                    Image="Convert.png"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="OnButtonClicked" />

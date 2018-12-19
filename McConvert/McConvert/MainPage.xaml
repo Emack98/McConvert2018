@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:McConvert"
              x:Class="McConvert.MainPage">
 
+    <!-- Overall layout of the main page with grids and buttons to navigate to conversion pages -->
+    <!-- Images on buttons also to help identify each page-->
 
         <Grid BackgroundColor="Black">
         <Button Image="Temperature.png" Grid.Row="0" Grid.Column="0" Text="Temperature" BackgroundColor="Gray" Clicked="Convert_Temperature"/>

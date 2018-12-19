@@ -16,7 +16,7 @@ namespace McConvert
 		{
 			InitializeComponent ();
 		}
-
+        //Buttons click settings for calcuations
         private void StorageClick1(object sender, EventArgs e)
         {
             double Kilo = Convert.ToDouble(StoreConv1.Text);

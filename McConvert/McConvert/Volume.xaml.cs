@@ -17,6 +17,8 @@ namespace McConvert
 			InitializeComponent();
 		}
 
+        //Button layouts for calculations and conversions in code behind
+
         private void VolumeConv1(object sender, EventArgs e)
         {
             double Mil = Convert.ToDouble(Volume1.Text);

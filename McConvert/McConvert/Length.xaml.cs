@@ -43,7 +43,7 @@ namespace McConvert
 
             var outFt = Feet.ToString();
 
-            FtMeters.Text = "Feet = " + Feet;
+            MetresFt.Text = "Feet = " + Feet;
         }
 
         //same for button3

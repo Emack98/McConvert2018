@@ -12,6 +12,8 @@ namespace McConvert
         {
             InitializeComponent();
 
+            //Setting Page1 as the first page to show when the app opens
+
             MainPage = new NavigationPage(new Page1());
 
         }

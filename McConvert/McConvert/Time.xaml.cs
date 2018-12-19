@@ -17,6 +17,7 @@ namespace McConvert
 			InitializeComponent ();
 		}
 
+        //Button layouts for calculations and conversions in code behind
         private void TimeConv1(object sender, EventArgs e)
         {
             double Seconds = Convert.ToDouble(Time1.Text);
